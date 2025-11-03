@@ -71,11 +71,16 @@
       <h2 class="center">How Nuse Works</h2>
       <p class="sub center">A short walkthrough of voice reporting, weekly summaries, and partner lending.</p>
 
-      <div class="video-frame">
-        <video class="video" controls playsinline preload="metadata" poster="hero.jpg">
-          <source src="video-nuse.mp4" type="video/mp4">
-        </video>
-      </div>
+<div class="video-frame">
+  <video class="video" controls playsinline preload="metadata" poster="hero.jpg">
+    <!-- First try the local file -->
+    <source src="video-nuse.mp4" type="video/mp4">
+    <!-- Fallback in case GitHub requires absolute URL -->
+    <source src="https://essenam.github.io/Nuse/video-nuse.mp4" type="video/mp4">
+    Your browser does not support the video tag. 
+    <a href="https://essenam.github.io/Nuse/video-nuse.mp4" target="_blank">Watch video</a>.
+  </video>
+</div>
 
       <div class="steps grid-3">
         <div class="card"><h3>1) Speak</h3><p>Send a daily voice note in Ewe or French with your sales and expenses.</p></div>
