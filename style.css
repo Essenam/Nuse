@@ -52,13 +52,13 @@ img{max-width:100%; display:block}
 .cta{margin-top:10px}
 .hero .btn{margin-right:10px}
 
-/* HERO image – use about.jpg (market vendor) */
+/* HERO image – use hero.jpg (market vendor) */
 .hero-media{
   min-height:420px; /* taller hero for impact */
   border-radius:18px; border:1px solid var(--border);
   background-image:
     linear-gradient(rgba(15,18,36,.35), rgba(15,18,36,.60)),
-    url('about.jpg');
+    url('hero.jpg');
   background-size:cover;
   background-position:center 35%; /* shows face + oranges nicely */
   box-shadow:0 16px 48px rgba(0,0,0,.35)
