@@ -204,6 +204,25 @@
   </div>
 </footer>
 
+<!-- ✅ Add your menu script HERE -->
+<script>
+  const btn = document.getElementById('menuBtn');
+  const nav = document.getElementById('siteNav');
+  btn.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+    document.body.classList.toggle('menu-open', open);
+  });
+  // close menu after tapping a link
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('open');
+    btn.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('menu-open');
+  }));
+</script>
+
+<!-- keep this one after -->
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
+
