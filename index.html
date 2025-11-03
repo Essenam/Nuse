@@ -1,62 +1,102 @@
-
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nuse – Voice-first finance for women entrepreneurs</title>
-  <meta name="description" content="Nuse is a voice-activated AI platform in local languages that provides microloans, financial education, business insights, savings, and insurance for women entrepreneurs in the informal economy.">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Nuse — Empowering Women Through Voice, Data, and Dignity</title>
+<meta name="description" content="Voice-first, AI-enabled financial access for women entrepreneurs in emerging markets.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- NAV -->
-  <nav>
-    <div class="container navbar">
-      <div class="brand"><span class="dot"></span> Nuse</div>
-      <div class="navlinks">
-        <a href="#about">About</a>
-        <a href="#solution">Solution</a>
-        <a href="#impact">Impact</a>
-        <a href="#partners">Partners</a>
-        <a href="#team">Team</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </nav>
 
-  <!-- HERO -->
-  <section class="container hero">
-    <div>
-      <h1>Financial confidence, in your voice.</h1>
-      <p>Nuse is an AI platform that understands local languages and empowers women entrepreneurs to manage money, access microloans, learn, and grow — starting across Togo’s informal economy.</p>
-      <div class="badges">
-        <span class="badge">Voice-first</span>
-        <span class="badge">Ewe & French</span>
-        <span class="badge">Microloans</span>
-        <span class="badge">Business insights</span>
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#home">Nuse</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#solution">Solution</a>
+      <a href="#demo">How it works</a>
+      <a href="#impact">Impact</a>
+      <a href="#partners">Partners</a>
+      <a href="#support">Support</a>
+      <a href="#team">Team</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+  <!-- HERO (uses about.jpg as background) -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="kicker">Empowering Women Through Voice, Data, and Dignity</span>
+        <h1>AI-Driven Financial Access for Women Entrepreneurs</h1>
+        <p>Voice-activated services in local languages to unlock microloans, financial education, business insights, savings, and insurance—starting in Togo and scaling across emerging markets.</p>
+        <div class="cta">
+          <a class="btn primary" href="#demo">Watch how it works</a>
+          <a class="btn" href="#partners">Partner With Us</a>
+        </div>
       </div>
-      <div class="cta">
-        <a class="btn btn-primary" href="#contact">Join the pilot</a>
-        <a class="btn btn-outline" href="#about">Learn more</a>
-      </div>
-    </div>
-    <div class="hero-img-wrap">
-      <img class="hero-img" src="hero.jpg" alt="Woman entrepreneur using a phone">
-      <div class="hero-badge">Trusted community pilot • 2025</div>
+      <div class="hero-media" role="img" aria-label="Market vendor entrepreneur using Nuse"></div>
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- ABOUT (image now uses hero.jpg) -->
   <section id="about" class="section">
-    <div class="container split">
-      <div>
+    <div class="container grid-2">
+      <div class="card">
         <h2>About Nuse</h2>
-        <p class="lead">We provide voice-activated financial services in local languages — offering access to <strong>microloans</strong>, <strong>financial education</strong>, <strong>business insights</strong>, <strong>savings</strong>, and <strong>insurance</strong>. We focus on rural women in the informal economy across Togo and beyond.</p>
+        <p class="lead">Nuse is a voice-first, AI-enabled platform that makes financial services <strong>accessible, dignified, and data-driven</strong> for women in the informal economy.</p>
+        <p>We meet users on WhatsApp and via phone so they can record sales and expenses by voice, receive practical tips, build savings, and access responsible microloans. Insights are delivered weekly in simple language, with monthly check-ins.</p>
+        <ul class="bullets">
+          <li>Local languages (Ewe/French) and low-literacy UX</li>
+          <li>Financial education via short audio lessons</li>
+          <li>Business insights & nudges that build habits</li>
+          <li>Data-informed credit with transparent terms</li>
+        </ul>
       </div>
-      <div>
-        <img class="hero-img" src="about.jpg" alt="Woman with tomatoes at market">
+      <div class="image-card">
+        <img src="hero.jpg" alt="Woman using Nuse on a mobile phone" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS (video) -->
+  <section id="demo" class="section">
+    <div class="container">
+      <h2 class="center">How Nuse Works</h2>
+      <p class="sub center">A short walkthrough of voice reporting, weekly summaries, and partner lending.</p>
+
+      <div class="video-frame">
+        <video
+          class="video"
+          controls
+          playsinline
+          preload="metadata"
+          poster="hero.jpg">
+          <source src="video-nuse.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="steps grid-3">
+        <div class="card">
+          <h3>1) Speak</h3>
+          <p>Send a daily voice note in Ewe or French with your sales and expenses.</p>
+        </div>
+        <div class="card">
+          <h3>2) See</h3>
+          <p>Get auto-summaries each week (profits, trends, reminders) on WhatsApp.</p>
+        </div>
+        <div class="card">
+          <h3>3) Grow</h3>
+          <p>Access responsible microloans and coaching through partner MFIs.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -64,101 +104,169 @@
   <!-- SOLUTION -->
   <section id="solution" class="section">
     <div class="container">
-      <h2>Our Solution</h2>
-      <p class="lead">A single, simple experience that meets entrepreneurs where they are — on WhatsApp and voice — and grows with them.</p>
-      <div class="grid-3">
+      <h2 class="center">The Solution</h2>
+      <p class="sub center">A modular, voice-enabled platform designed for accessibility, trust, and measurable outcomes.</p>
+      <div class="grid-3 cards">
         <div class="card">
-          <h3>Voice in local languages</h3>
-          <p>Hands-free actions in Ewe & French: log sales/expenses, ask for advice, or request a microloan.</p>
+          <h3>Voice & Local Language</h3>
+          <p>Capture transactions via voice notes in Ewe/French; automatic transcription and categorization.</p>
+          <div class="pills"><span>NLP</span><span>WhatsApp</span><span>Low-literacy UX</span></div>
         </div>
         <div class="card">
-          <h3>Microloans & savings</h3>
-          <p>Smart eligibility, fair rates, reminders, and savings nudges tailored to each business.</p>
+          <h3>Financial Education</h3>
+          <p>Short audio lessons, quizzes, and nudges that build confidence and healthy money habits.</p>
+          <div class="pills"><span>Micro-learning</span><span>Behavioral Design</span></div>
         </div>
         <div class="card">
-          <h3>Business insights</h3>
-          <p>Weekly WhatsApp summaries and simple dashboards to track growth, costs, and profit.</p>
+          <h3>Business Insights</h3>
+          <p>Weekly summaries with trends and tips; monthly one-to-one reviews and group sessions.</p>
+          <div class="pills"><span>Analytics</span><span>Python</span><span>Power BI</span></div>
+        </div>
+        <div class="card">
+          <h3>Responsible Microloans</h3>
+          <p>Partner with MFIs to provide transparent credit informed by real operating data.</p>
+          <div class="pills"><span>Risk Signals</span><span>Payment Alerts</span></div>
+        </div>
+        <div class="card">
+          <h3>Savings & Insurance</h3>
+          <p>Track goals and premiums; proactive reminders for renewals (e.g., AMU in Togo).</p>
+          <div class="pills"><span>Goal Tracking</span><span>Protection</span></div>
+        </div>
+        <div class="card">
+          <h3>Partner APIs</h3>
+          <p>Secure data-sharing for MFIs/NGOs; interoperable for scale and evaluation.</p>
+          <div class="pills"><span>Interoperability</span><span>M&E</span></div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- IMPACT -->
-  <section id="impact" class="section" style="background:#ffffffb8;">
+  <section id="impact" class="section">
     <div class="container">
-      <h2>Impact we measure</h2>
-      <div class="grid-3">
-        <div class="card">
-          <h3>+ Savings created</h3>
-          <p>Number of women who build and keep emergency savings for 3+ months.</p>
-        </div>
-        <div class="card">
-          <h3>+ Business stability</h3>
-          <p>Improved inventory turnover and fewer stockouts through better planning.</p>
-        </div>
-        <div class="card">
-          <h3>+ Income & agency</h3>
-          <p>Increased monthly income and decision-making power at home and in the community.</p>
-        </div>
+      <h2 class="center">Impact</h2>
+      <p class="sub center">Pilot OKRs we track to prove value and drive scale.</p>
+      <div class="stats">
+        <div class="stat"><div class="big">+25%</div><div class="label">Savings discipline</div></div>
+        <div class="stat"><div class="big">−18%</div><div class="label">Default risk vs. baseline</div></div>
+        <div class="stat"><div class="big">92%</div><div class="label">Weekly reporting adherence</div></div>
       </div>
+      <p class="footnote center">* Targets for first 6–9 months. Replace with live results.</p>
     </div>
   </section>
 
   <!-- PARTNERS -->
   <section id="partners" class="section">
+    <div class="container grid-2">
+      <div class="card">
+        <h2>For MFIs & Banks</h2>
+        <p>Alternative data for underwriting, customer education that reduces defaults, and portfolio dashboards.</p>
+        <div class="pills"><span>KYC-Light</span><span>Risk Scoring</span><span>Portfolio Insights</span></div>
+        <a class="btn" href="#contact">Discuss a Pilot</a>
+      </div>
+      <div class="card">
+        <h2>For NGOs & Foundations</h2>
+        <p>Field-ready tools for low-literacy communities, with auditable outcomes for grant reporting.</p>
+        <div class="pills"><span>Localization</span><span>M&E</span></div>
+        <a class="btn" href="#contact">Explore Partnerships</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUPPORT -->
+  <section id="support" class="section">
     <div class="container">
-      <h2>Partners</h2>
-      <p class="lead">We work with microfinance institutions, nonprofits, universities, and community leaders.</p>
-      <div class="partners">
-        <div class="partner">FAIEJ</div>
-        <div class="partner">Women in AI</div>
-        <div class="partner">UST Schulze School</div>
-        <div class="partner">Local MFIs</div>
+      <h2 class="center">Support Nuse</h2>
+      <p class="sub center">Fuel the pilot with mentorship, grants, or in-kind contributions.</p>
+      <div class="grid-3 cards">
+        <div class="card">
+          <h3>Mentor or Advise</h3>
+          <p>Guide product, field ops, or research design.</p>
+          <a class="btn" href="#contact">Volunteer</a>
+        </div>
+        <div class="card">
+          <h3>Grant or Sponsor</h3>
+          <p>Back education, data plans, or insurance pilots.</p>
+          <a class="btn" href="#contact">Sponsor</a>
+        </div>
+        <div class="card">
+          <h3>Partner Pilot</h3>
+          <p>Bring Nuse to your community via local partners.</p>
+          <a class="btn" href="#contact">Start a Pilot</a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- TEAM -->
   <section id="team" class="section">
-    <div class="container">
-      <h2>Team</h2>
-      <div class="team">
-        <div class="member">
-          <img src="team.jpg" alt="Esse Komlanvi">
-          <div>
-            <h4>Essivi “Esse” Komlanvi</h4>
-            <p>IT professional with 10+ years in digitalization and training for accounting systems. Business Analytics expert and founder of Nuse.</p>
-          </div>
-        </div>
+    <div class="container grid-2">
+      <div class="image-card">
+        <img src="team.jpg" alt="Nuse team and community partners" loading="lazy">
+      </div>
+      <div class="card">
+        <h2>Team</h2>
+        <p><strong>Essivi “Esse” Komlanvi</strong> — Founder. IT consulting, analytics, and AI for social impact.</p>
+        <p><strong>Advisors</strong> — Microfinance, data science, and operations experts supporting pilot design and governance.</p>
+        <div class="pills"><span>Product</span><span>Data</span><span>Community</span></div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section contact" style="background:#ffffffc7;">
-    <div class="container">
-      <h2>Contact</h2>
-      <p class="lead">Interested in partnering or joining the pilot? Send us a message.</p>
-      <!-- FormSubmit: replace YOUR_EMAIL@example.com with your email address -->
-      <form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
-        <input type="hidden" name="_subject" value="Nuse Website — New Message">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-        <input class="input" type="text" name="name" placeholder="Your name" required>
-        <input class="input" type="email" name="email" placeholder="Your email" required>
-        <textarea name="message" placeholder="How would you like to collaborate?" required></textarea>
-        <button class="btn btn-primary" type="submit">Send message</button>
-      </form>
-      <p style="margin-top:8px;color:var(--muted);font-size:14px;">Tip: In <code>index.html</code>, set the form <code>action</code> to your email via <code>formsubmit.co</code>.</p>
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="section">
+    <div class="container grid-3 quotes">
+      <blockquote class="quote">“Nuse made money management part of my daily routine.”<span>— Stella K., Entrepreneur</span></blockquote>
+      <blockquote class="quote">“Short audio lessons helped me price better and start saving.”<span>— Maria L., Shop Owner</span></blockquote>
+      <blockquote class="quote">“With reminders and a small loan, I grew my inventory without stress.”<span>— Jamila G., Entrepreneur</span></blockquote>
     </div>
   </section>
 
-  <footer>
-    <div class="container">© <span id="y"></span> Nuse • Financial inclusion for women entrepreneurs</div>
-  </footer>
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container grid-2">
+      <div class="card">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+          <div class="row">
+            <label><span>Name</span><input type="text" name="name" placeholder="Your name" required></label>
+            <label><span>Email</span><input type="email" name="email" placeholder="you@example.com" required></label>
+          </div>
+          <label><span>Topic</span>
+            <select name="topic">
+              <option value="pilot">Pilot Partnership</option>
+              <option value="sponsorship">Grant / Sponsorship</option>
+              <option value="mentorship">Mentorship / Advice</option>
+              <option value="general">General Inquiry</option>
+            </select>
+          </label>
+          <label><span>Message</span><textarea name="message" rows="5" placeholder="How can we collaborate?"></textarea></label>
+          <button class="btn primary" type="submit">Send</button>
+          <p class="note">Replace <code>your-form-id</code> with your Formspree endpoint.</p>
+        </form>
+      </div>
+      <div class="card">
+        <h2>Subscribe</h2>
+        <p>Get pilot updates, stories, and research highlights.</p>
+        <form action="https://example.com/newsletter" method="POST">
+          <label><span>Email</span><input type="email" name="email" placeholder="you@example.com" required></label>
+          <button class="btn" type="submit">Subscribe</button>
+          <p class="note">Replace with your Mailchimp/ConvertKit endpoint.</p>
+        </form>
+        <p class="meta"><strong>Location:</strong> Togo · <strong>Email:</strong> <a href="mailto:essiviessenam.komlanvi@gmail.com">essiviessenam.komlanvi@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+</main>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Nuse</span>
+    <a href="https://essenam.github.io/esse-portfolio/" target="_blank" rel="noreferrer">Back to Portfolio</a>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
+
