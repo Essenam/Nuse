@@ -1,7 +1,7 @@
 title: Nuse
 description: Empowering Women Through Voice, Data, and Dignity
 url: "https://nuseapp.com"
-baseurl: ""
+baseurl: "/Nuse"
 
 # Build
 markdown: kramdown
