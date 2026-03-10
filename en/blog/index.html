@@ -1,0 +1,22 @@
+---
+layout: default
+lang: en
+title: Blog
+---
+
+<div style="max-width: 900px; margin: 8rem auto 6rem; padding: 0 2rem;">
+  <div class="section-label">From the Field</div>
+  <h1 class="section-title">All posts</h1>
+
+  <div class="blog-grid" style="margin-top: 3rem;">
+    {% assign en_posts = site.posts | where: "lang", "en" %}
+    {% for post in en_posts %}
+    <a href="{{ post.url }}" class="blog-card">
+      <div class="blog-card-tag">{{ post.category | default: "Insight" }}</div>
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
+      <div class="blog-card-date">{{ post.date | date: "%B %d, %Y" }}</div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
