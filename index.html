@@ -1,220 +1,25 @@
-<!doctype html>
-<html lang="en">
+---
+layout: null
+---
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Nuse - Empowering Women Through Voice, Data, and Dignity</title>
-<meta name="description" content="Voice-first, AI-enabled financial access for women entrepreneurs in emerging markets.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=2" />
+  <meta charset="UTF-8">
+  <title>Nuse</title>
+  <script>
+    // Detect browser language, default to French (primary audience)
+    var lang = navigator.language || navigator.userLanguage;
+    if (lang && lang.startsWith('fr')) {
+      window.location.href = '/fr/';
+    } else {
+      window.location.href = '/en/';
+    }
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0;url=/fr/">
+  </noscript>
 </head>
 <body>
-
-<header class="nav">
-  <div class="container nav-inner">
-    <a class="brand" href="#home">Nuse</a>
-
-    <!-- Mobile menu button -->
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav">
-      <span></span><span></span><span></span>
-    </button>
-
-    <!-- Nav links -->
-    <nav id="siteNav" class="nav-links">
-      <a href="#about">About</a>
-      <a href="#solution">Solution</a>
-      <a href="#demo">How it works</a>
-      <a href="#impact">Impact</a>
-      <a href="#partners">Partners</a>
-      <a href="#support">Support</a>
-      <a href="#team">Team</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main id="home">
-  <!-- HERO uses about.jpg -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <span class="kicker">Empowering Women Through Voice, Data, and Dignity</span>
-        <h1>AI-Driven Financial Access for Women Entrepreneurs</h1>
-        <p>Voice-activated services in local languages to unlock microloans, financial education, business insights, savings, and insurance—starting in Togo and scaling across emerging markets.</p>
-        <div class="cta">
-          <a class="btn primary" href="#demo">Watch how it works</a>
-          <a class="btn" href="#partners">Partner With Us</a>
-        </div>
-      </div>
-      <div class="hero-media" role="img" aria-label="Market vendor entrepreneur"></div>
-    </div>
-  </section>
-
-  <!-- ABOUT uses hero.jpg -->
-  <section id="about" class="section">
-    <div class="container grid-2">
-      <div class="card">
-        <h2>About Nuse</h2>
-        <p class="lead">Nuse is a voice-first, AI-enabled platform that makes financial services <strong>accessible, dignified, and data-driven</strong> for women in the informal economy.</p>
-        <ul class="bullets">
-          <li>Local languages (Ewe/French) and low-literacy UX</li>
-          <li>Financial education via short audio lessons</li>
-          <li>Business insights & nudges that build habits</li>
-          <li>Data-informed credit with transparent terms</li>
-        </ul>
-      </div>
-      <div class="image-card">
-        <img src="about.jpg" alt="Woman using Nuse on a mobile phone" loading="lazy">
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS -->
-  <section id="demo" class="section">
-    <div class="container">
-      <h2 class="center">How Nuse Works</h2>
-      <p class="sub center">A short walkthrough of voice reporting, weekly summaries, and partner lending.</p>
-
-<div class="video-frame">
-  <video class="video" controls playsinline preload="metadata" poster="hero.jpg">
-    <!-- First try the local file -->
-    <source src="video-nuse.mp4" type="video/mp4">
-    <!-- Fallback in case GitHub requires absolute URL -->
-    <source src="https://essenam.github.io/Nuse/video-nuse.mp4" type="video/mp4">
-    Your browser does not support the video tag. 
-    <a href="https://essenam.github.io/Nuse/video-nuse.mp4" target="_blank">Watch video</a>.
-  </video>
-</div>
-
-      <div class="steps grid-3">
-        <div class="card"><h3>1) Speak</h3><p>Send a daily voice note in Ewe or French with your sales and expenses.</p></div>
-        <div class="card"><h3>2) See</h3><p>Get auto-summaries each week (profits, trends, reminders) on WhatsApp.</p></div>
-        <div class="card"><h3>3) Grow</h3><p>Access responsible microloans and coaching through partner MFIs.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SOLUTION -->
-  <section id="solution" class="section">
-    <div class="container">
-      <h2 class="center">The Solution</h2>
-      <p class="sub center">A modular, voice-enabled platform designed for accessibility, trust, and measurable outcomes.</p>
-      <div class="grid-3 cards">
-        <div class="card"><h3>Voice & Local Language</h3><p>Capture transactions via voice notes in Ewe/French; automatic transcription and categorization.</p><div class="pills"><span>NLP</span><span>WhatsApp</span><span>Low-literacy UX</span></div></div>
-        <div class="card"><h3>Financial Education</h3><p>Short audio lessons, quizzes, and nudges that build confidence and healthy money habits.</p><div class="pills"><span>Micro-learning</span><span>Behavioral Design</span></div></div>
-        <div class="card"><h3>Business Insights</h3><p>Weekly summaries with trends and tips; monthly one-to-one reviews and group sessions.</p><div class="pills"><span>Analytics</span><span>Python</span><span>Power BI</span></div></div>
-        <div class="card"><h3>Responsible Microloans</h3><p>Partner with MFIs to provide transparent credit informed by real operating data.</p><div class="pills"><span>Risk Signals</span><span>Payment Alerts</span></div></div>
-        <div class="card"><h3>Savings & Insurance</h3><p>Track goals and premiums; proactive reminders for renewals (e.g., AMU in Togo).</p><div class="pills"><span>Goal Tracking</span><span>Protection</span></div></div>
-        <div class="card"><h3>Partner APIs</h3><p>Secure data-sharing for MFIs/NGOs; interoperable for scale and evaluation.</p><div class="pills"><span>Interoperability</span><span>M&E</span></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- IMPACT -->
-  <section id="impact" class="section">
-    <div class="container">
-      <h2 class="center">Impact</h2>
-      <p class="sub center">Pilot OKRs we track to prove value and drive scale.</p>
-      <div class="stats">
-        <div class="stat"><div class="big">+25%</div><div class="label">Savings discipline</div></div>
-        <div class="stat"><div class="big">−18%</div><div class="label">Default risk vs. baseline</div></div>
-        <div class="stat"><div class="big">92%</div><div class="label">Weekly reporting adherence</div></div>
-      </div>
-      <p class="footnote center">* Targets for first 6–9 months.</p>
-    </div>
-  </section>
-
-  <!-- PARTNERS / SUPPORT / TEAM / TESTIMONIALS / CONTACT (same as before) -->
-  <section id="partners" class="section">
-    <div class="container grid-2">
-      <div class="card"><h2>For MFIs & Banks</h2><p>Alternative data for underwriting, customer education that reduces defaults, and portfolio dashboards.</p><div class="pills"><span>KYC-Light</span><span>Risk Scoring</span><span>Portfolio Insights</span></div><a class="btn" href="#contact">Discuss a Pilot</a></div>
-      <div class="card"><h2>For NGOs & Foundations</h2><p>Field-ready tools for low-literacy communities, with auditable outcomes for grant reporting.</p><div class="pills"><span>Localization</span><span>M&E</span></div><a class="btn" href="#contact">Explore Partnerships</a></div>
-    </div>
-  </section>
-
-  <section id="support" class="section">
-    <div class="container">
-      <h2 class="center">Support Nuse</h2>
-      <p class="sub center">Fuel the pilot with mentorship, grants, or in-kind contributions.</p>
-      <div class="grid-3 cards">
-        <div class="card"><h3>Mentor or Advise</h3><p>Guide product, field ops, or research design.</p><a class="btn" href="#contact">Volunteer</a></div>
-        <div class="card"><h3>Grant or Sponsor</h3><p>Back education, data plans, or insurance pilots.</p><a class="btn" href="#contact">Sponsor</a></div>
-        <div class="card"><h3>Partner Pilot</h3><p>Bring Nuse to your community via local partners.</p><a class="btn" href="#contact">Start a Pilot</a></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="team" class="section">
-    <div class="container grid-2">
-      <div class="image-card"><img src="team.jpg" alt="Nuse team and community partners" loading="lazy"></div>
-      <div class="card"><h2>Team</h2><p><strong>Essivi “Esse” Komlanvi</strong> — Founder. IT consulting, analytics, and AI for social impact.</p>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <div class="container grid-2">
-      <div class="card">
-        <h2>Contact Us</h2>
-        <form action="https://formspree.io/f/xzzkwjgl" method="POST">
-          <div class="row">
-            <label><span>Name</span><input type="text" name="name" placeholder="Your name" required></label>
-            <label><span>Email</span><input type="email" name="email" placeholder="you@example.com" required></label>
-          </div>
-          <label><span>Topic</span>
-            <select name="topic">
-              <option value="pilot">Pilot Partnership</option>
-              <option value="sponsorship">Grant / Sponsorship</option>
-              <option value="mentorship">Mentorship / Advice</option>
-              <option value="general">General Inquiry</option>
-            </select>
-          </label>
-          <label><span>Message</span><textarea name="message" rows="5" placeholder="How can we collaborate?"></textarea></label>
-          <button class="btn primary" type="submit">Send</button>
-          <p class="note">You’ll see a confirmation after sending.</p>
-        </form>
-      </div>
-      <div class="card">
-        <h2>Subscribe</h2>
-        <p>Get pilot updates, stories, and research highlights.</p>
-        <form action="https://formspree.io/f/xpwonoaa" method="POST">
-          <label><span>Email</span><input type="email" name="email" placeholder="you@example.com" required></label>
-          <button class="btn" type="submit">Subscribe</button>
-          <p class="note">You’ll receive a confirmation email shortly.</p>
-        </form>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <div class="container footer-inner">
-    <span>© <span id="year"></span> Nuse</span>
-    <a href="https://essenam.github.io/esse-portfolio/" target="_blank" rel="noreferrer">Back to Portfolio</a>
-  </div>
-</footer>
-
-<!-- ✅ Add your menu script HERE -->
-<script>
-  const btn = document.getElementById('menuBtn');
-  const nav = document.getElementById('siteNav');
-  btn.addEventListener('click', () => {
-    const open = nav.classList.toggle('open');
-    btn.setAttribute('aria-expanded', open);
-    document.body.classList.toggle('menu-open', open);
-  });
-  // close menu after tapping a link
-  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    nav.classList.remove('open');
-    btn.setAttribute('aria-expanded', 'false');
-    document.body.classList.remove('menu-open');
-  }));
-</script>
-
-<!-- keep this one after -->
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <p><a href="/fr/">Français</a> · <a href="/en/">English</a></p>
 </body>
 </html>
-
