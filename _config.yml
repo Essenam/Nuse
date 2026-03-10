@@ -1,0 +1,29 @@
+title: Nuse
+description: Empowering Women Through Voice, Data, and Dignity
+url: "https://nuseapp.com"
+baseurl: ""
+
+# Build
+markdown: kramdown
+permalink: /:categories/:year/:month/:day/:title/
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+
+# Defaults
+defaults:
+  - scope:
+      path: "en"
+    values:
+      lang: en
+      layout: default
+  - scope:
+      path: "fr"
+    values:
+      lang: fr
+      layout: default
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
